@@ -1,0 +1,29 @@
+body{
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+}
+.container1, .container2, .container3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: aliceblue;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* .container2, .container3{
+    display: none;
+} */
+#color{
+    height: 17rem;
+    aspect-ratio: 1.5/1;
+    border: 5px solid hsl(0, 0%, 0%);
+    border-radius: 1rem;
+    margin: 1rem 0rem;
+}
