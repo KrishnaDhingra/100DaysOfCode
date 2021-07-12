@@ -1,0 +1,143 @@
+html, body{
+  scroll-behavior: smooth;
+}
+body{
+  box-sizing: border-box;
+  left: 0px;
+  top: 0px;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: monospace;
+}
+.container{
+  min-height: 45%;
+  height: auto;
+  width: 750px;
+  background-color: rgb(34, 34, 34);
+  overflow-x: hidden;
+}
+.left_side{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 10rem;
+}
+.lines{
+  width: 20px;
+  height: 1px;
+  background-color: white;
+  margin: 4px 0px;
+}
+header{
+  background-color: rgb(34, 34, 34);
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 2rem;
+}
+nav{
+  position: absolute;
+  display: none;
+}
+ul{
+  display: flex;
+  border-right: 5px solid grey;
+  background-color: rgb(34, 34, 34);
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 75.5vh;
+  width: 250px;
+  gap: 2rem;
+  padding: 3rem 1rem;
+}
+ul li{
+  list-style: none;
+  color: white;
+  font-size: 1rem;
+}
+
+.heading{
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.previous{
+  height: 20px;
+  width: 20px;
+  background-color: rgb(43, 42, 42);
+  border: 2px solid white;
+  border-radius: 50%;
+}
+.output_container{
+  width: 100%;
+}
+.output{
+  width: 97%;
+  color: white;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.first_output{
+  margin-top: -10px;
+  width: 95.5%;
+  height: 3rem;
+  font-size: 1.1rem;
+  font-weight: light;
+  color: rgb(201, 198, 198);
+}
+.second_output{
+  height: 4.5rem;
+  font-size: 5rem;
+  font-weight: bold;
+}
+.inner{
+  margin-top: 2rem;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.backspace_image{
+  height: 20px;
+  width: 20px;
+}
+.btn{
+  font-family: monospace;
+  height: 6rem;
+  border: 1.7px solid rgb(39, 39, 39);
+  background-color: rgb(26, 25, 25);
+  color: white;
+  font-size: 1.6rem;
+}
+.number, .dark{
+  background-color: rgb(14, 14, 14);
+}
+.number{
+  font-weight: bold;
+}
+#equals{
+  background-color: rgb(93, 139, 240);
+}
+.btn:hover{
+  background-color: rgb(54, 54, 54);
+}
+#equals:hover{
+  background-color: rgb(61, 118, 240);
+}
+@media only screen and (max-width: 500px) {
+  .inner{
+    grid-template-columns: repeat(3, 1fr);
+  }
+  #subtract, #add, #multiply{
+    background-color: rgb(14, 14, 14);
+  }
+  #subtract:hover, #add:hover, #multiply:hover{
+    background-color: rgb(54, 54, 54);
+  }
+  #seven{
+    background-color: rgb(26, 25, 25);
+  }
+}
