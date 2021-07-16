@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900&display=swap');
+
+body{
+    box-sizing: border-box;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito Sans';
+}
+header{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0rem;
+    border: 2px solid red;
+}
+header div{
+    padding: 0rem 7rem;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    background-color: grey;
+    border: 2px solid red;
+}
+.input_container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid red;
+}
+.input_container .input, .input_container .region_filter_container{
+    padding: 0rem 7rem;
+}
+.dropdown{
+    position: absolute;
+    width: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+ul{
+    border: 2px solid red;
+    padding-right: 0px;
+}
+ul li{
+    list-style: none;
+    border: 2px solid red;
+    text-align: left;
+}
+.region_filter, input{
+    border: none;
+    background-color: white;
+    color: hsl(0, 0%, 52%);
+    padding: 1rem 2rem;
+    border-radius: 4px;
+}
+input::placeholder{
+    font-family: 'Nunito Sans';
+}
+input{
+    outline: none;
+}
+.region_filter_text{
+    color: hsl(200, 15%, 8%);
+}
+.card_container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+    grid-gap: 4rem;
+    min-height: 82vh;
+    height: auto;
+    border: 2px solid red;
+    padding: 0rem 7rem;
+}
+.card{
+
+    background-color: white;
+    border-radius: 4px;
+    height: 25rem;
+
+}
+img{
+    width: 100%;
+    height: 220px
+}
