@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+    <link href="https://css.gg/css?=" rel="stylesheet">
+</head>
+<body>
+    <div class="container" id="container">
+        <header class="header1">
+            <div class="left_side">
+                <div class="burger" id="burger">
+                    <div class="lines" id="line1"></div>
+                    <div class="lines" id="line2"></div>
+                    <div class="lines" id="line3"></div>
+                </div>
+                <div class="heading">Calculator</div>
+            </div>
+            <div class="right_side">
+                <div class="previous"></div>
+            </div>
+        </header>
+
+        <nav>
+            <ul class="navlinks" id="navlinks">
+                <div class="links_container" id="link1">
+                    <img src="images/calendar.png" alt="" class="nav_images">
+                    <li class="links" id="links">Date Calculation</li>
+                </div>
+
+                <div class="links_container" id="link2">
+                    <img src="images/temperature.png" alt="" class="nav_images">
+                    <li class="links">Temperature</li>                  
+                </div>
+
+                <div class="links_container" id="link3">
+                    <img src="images/ruler.png" alt="" class="nav_images">
+                    <li class="links">Length</li>
+                </div>
+
+                <div class="links_container" id="link4">
+                    <img src="images/money.png" alt="" class="nav_images">
+                    <li class="links">Currency</li>
+                </div>
+
+                <div class="links_container" id="link5">
+                    <img src="images/calendar.png" alt="" class="nav_images">
+                    <li class="links">Date Calculation</li>
+                </div>
+
+                <div class="links_container" id="link6">
+                    <img src="images/temperature.png" alt="" class="nav_images">
+                    <li class="links">Temperature</li>
+                </div>
+
+                <div class="links_container" id="link7">
+                    <img src="images/ruler.png" alt="" class="nav_images">
+                    <li class="links">Length</li>              
+                </div>
+
+                <div class="links_container" id="link8">
+                    <img src="images/money.png" alt="" class="nav_images">
+                    <li class="links">Currency</li>
+                </div>
+
+                <div class="links_container" id="link9">
+                    <img src="images/calendar.png" alt="" class="nav_images">
+                    <li class="links">Date Calculation</li>
+                </div>
+
+                <div class="links_container" id="link10">
+                    <img src="images/temperature.png" alt="" class="nav_images">
+                    <li class="links">Temperature</li>
+                </div>
+
+            </ul>
+        </nav>
+
+
+        <div class="output_container" id="output_container">
+            <div class="first_output output" id="first_output"></div>
+            <div class="second_output output" id="second_output">0</div>
+        </div>
+
+        
+        <div class="inner" id="inner">
+            <button class="btn" id="percentage">%</button>
+            <button class="btn" id="ce">CE</button>
+            <button class="btn" id="c">C</button>
+            <button class="btn" id="backspace"><img src="images/backspace.png" alt="" class="backspace_image"></button>
+            <button class="btn" id="x">a</button>
+            <button class="btn" id="x">a</button>
+            <button class="btn" id="x">a</button>
+            <button class="btn operate" id="divide">/</button>
+            <button class="btn number" id="seven">7</button>
+            <button class="btn number" id="eight">8</button>
+            <button class="btn number" id="nine">9</button>
+            <button class="btn operate" id="multiply">x</button>
+            <button class="btn number" id="four">4</button>
+            <button class="btn number" id="five">5</button>
+            <button class="btn number" id="siz">6</button>
+            <button class="btn operate" id="subtract">-</button>
+            <button class="btn number" id="one">1</button>
+            <button class="btn number" id="two">2</button>
+            <button class="btn number" id="three">3</button>
+            <button class="btn operate" id="add">+</button>
+            <button class="btn dark" id="x">a</button>
+            <button class="btn number" id="zero">0</button>
+            <button class="btn dark" id="dot">.</button>
+            <button class="btn" id="equals">=</button>
+        </div>
+        
+        <div class="output_container2" id="output_container2">
+            <div class="first_output_container">
+                <div class="first_output2 output2" id="first_output2">0</div>
+
+                <div class="custom-select">
+
+                    <select name="" id="first_select">
+                        <option value="">Celsius</option>
+                        <option value="">Fahrenheit</option>
+                        <option value="">Kelvin</option>
+                    </select>
+
+                </div>
+
+            </div>
+            <div class="second_output_container">
+
+                <div class="second_output2 output2" id="second_output2">0</div>
+
+                <div class="custom-select">
+
+                    <select name="" id="second_select">
+                        <option value="">Celsius</option>
+                        <option value="">Fahrenheit</option>
+                        <option value="">Kelvin</option>
+                    </select>
+
+                </div>
+
+            </div>
+        </div>
+        
+        <div class="inner2" id="inner2">
+            <button class="btn1" id="ce2">CE</button>
+            <button class="btn1" id="backspace1"><img src="images/backspace.png" alt="" class="backspace_image"></button>
+            <button class="btn1 number1 dark" id="seven">7</button>
+            <button class="btn1 number1 dark" id="eight">8</button>
+            <button class="btn1 number1 dark" id="nine">9</button>
+            <button class="btn1 number1 dark" id="four">4</button>
+            <button class="btn1 number1 dark" id="five">5</button>
+            <button class="btn1 number1 dark" id="siz">6</button>
+            <button class="btn1 number1 dark" id="one">1</button>
+            <button class="btn1 number1 dark" id="two">2</button>
+            <button class="btn1 number1 dark" id="three">3</button>
+            <button class="btn1 dark" id="x">+/-</button>
+            <button class="btn1 number dark" id="zero">0</button>
+            <button class="btn1 dark" id="dot">.</button>
+            <button class="btn1" id="dot1"></button>
+        </div>
+
+
+
+
+    </div>
+
+    <script src="calculator.js"></script>
+</body>
+</html>

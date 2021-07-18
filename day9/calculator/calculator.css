@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+html, body{
+  scroll-behavior: smooth;
+}
+body{
+  box-sizing: border-box;
+  left: 0px;
+  top: 0px;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: monospace;
+}
+.container{
+  min-height: 45%;
+  height: auto;
+  width: 750px;
+  background-color: rgb(34, 34, 34);
+  overflow-x: hidden;
+
+}
+.left_side{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 10rem;
+}
+.lines{
+  width: 20px;
+  height: 1px;
+  background-color: white;
+  margin: 4px 0px;
+  transition: all 0.3s;
+}
+.duplicate_burger{
+  transition: all 0.3s;
+}
+.duplicate_burger #line1{
+  transform: rotate(45deg);
+  margin-left: 0px;
+}
+.duplicate_burger #line2{
+  display: none;
+}
+.duplicate_burger #line3{
+  transform: rotate(-45deg);
+  margin-top: -4px;
+
+}
+.header1, .header2{
+  background-color: rgb(34, 34, 34);
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 1rem;
+}
+nav{
+  position: absolute;
+  margin-top: -37px;
+}
+.navlinks{
+  display: flex;
+  background-color: rgb(34, 34, 34);
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 78.5vh;
+  /* border: 2px solid red; */
+  width: 0px;
+  gap: 0rem;
+  padding: 3rem 0rem;
+  transition: all 0.3s;
+  overflow: hidden;
+}
+.duplicate_nav{
+  border-right: 3px solid grey;
+  width: 250px;
+}
+
+ul li{
+  list-style: none;
+  color: white;
+  font-size: 1rem;
+  margin-left: 0rem;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 1px;
+}
+.links_container{
+  width: 100%;
+  padding: 0.9rem 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.nav_images{
+  height: 16px;
+  width: 16px;
+}
+.links_container:hover{
+  background-color: rgb(54, 54, 54);
+}
+.heading{
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.previous{
+  height: 20px;
+  width: 20px;
+  background-color: rgb(43, 42, 42);
+  border: 2px solid white;
+  border-radius: 50%;
+}
+.output_container{
+  width: 100%;
+}
+.output{
+  width: 97%;
+  color: white;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.first_output{
+  margin-top: -10px;
+  width: 95.5%;
+  height: 3rem;
+  font-size: 1.1rem;
+  font-weight: light;
+  color: rgb(201, 198, 198);
+}
+.second_output{
+  height: 4.5rem;
+  font-size: 5rem;
+  font-weight: bold;
+}
+.inner{
+  margin-top: 2rem;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.backspace_image{
+  height: 20px;
+  width: 20px;
+}
+.btn{
+  font-family: monospace;
+  height: 6rem;
+  border: 1.7px solid rgb(39, 39, 39);
+  background-color: rgb(26, 25, 25);
+  color: white;
+  font-size: 1.6rem;
+}
+.number, .dark{
+  background-color: rgb(14, 14, 14);
+}
+.number{
+  font-weight: bold;
+}
+#equals{
+  background-color: rgb(93, 139, 240);
+}
+.btn:hover{
+  background-color: rgb(54, 54, 54);
+}
+#equals:hover{
+  background-color: rgb(61, 118, 240);
+}
+@media only screen and (max-width: 500px) {
+  .inner{
+    grid-template-columns: repeat(3, 1fr);
+  }
+  #subtract, #add, #multiply{
+    background-color: rgb(14, 14, 14);
+  }
+  #subtract:hover, #add:hover, #multiply:hover{
+    background-color: rgb(54, 54, 54);
+  }
+  #seven{
+    background-color: rgb(26, 25, 25);
+  }
+}
+
+.output_container2{
+  width: 100%;
+}
+.output2{
+  width: 100%;
+  color: white;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 1rem;
+}
+.first_output2{
+  margin-top: -10px;
+  width: 95.5%;
+  height: 3rem;
+  font-size: 3rem;
+  font-weight: light;
+}
+.second_output2{
+  height: 4.5rem;
+  font-size: 3rem;
+  font-weight: light;
+}
+
+.inner2{
+  margin-top: 2rem;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.btn1{
+  font-family: monospace;
+  height: 6rem;
+  border: 1.7px solid rgb(39, 39, 39);
+  background-color: rgb(26, 25, 25);
+  color: white;
+  font-size: 1.6rem;
+}
+.number, .dark{
+  background-color: rgb(14, 14, 14);
+}
+
+#dot1{
+  grid-column: 1 / 1;
+  grid-row: 1 / 1;
+  background-color: rgb(34, 34, 34);
+  border-color: rgb(34, 34, 34);
+}
+
+select{
+  background-color: rgb(34, 34, 34);
+  color: white;
+  border: none;
+  font-family: monospace;
+  outline: none;
+  font-size: 1rem;
+}
+#first_select, #second_select{
+  padding: 1rem 1rem;
+}
+
+.inner, .output_container{
+  display: none;
+}
+.inner2, .output_container2{
+  /* display: none; */
+}

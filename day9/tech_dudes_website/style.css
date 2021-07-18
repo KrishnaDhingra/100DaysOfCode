@@ -1,0 +1,731 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&display=swap');
+
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+#particles-js{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+    overflow-x: hidden;
+    background-color: #252434;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.navbar{
+    background-color: transparent;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    padding: -100px 100px;
+}
+header{
+    position: relative;
+    top: 0;
+}
+.landing_page{
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    overflow-x: hidden;
+
+}
+.landing_page_picture{
+    height: 12rem;
+    width: 12rem;
+}
+.navbar ul{
+    overflow: auto;
+    padding-left:30%;
+}
+.navbar li{
+    float:right;
+    list-style: none; 
+    
+}
+.navbar li a{
+    padding: 3px 0px;
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+}
+.navbar ul li{
+    border-radius: 6px;
+    padding: 1rem 2rem;
+}
+.navbar ul #contact{
+    padding: 0.7rem 2.5rem;
+}
+.underline::after{
+    content: '';
+    display: block;
+    width: 0%;
+    height: 2px;
+    margin-left: 0px;
+    background-color: rgb(83, 103, 255);
+    transition: width 0.3s;
+}
+.underline:hover::after{
+    width: 100%;
+    transition: width 0.3s;
+}
+#contact{
+    background-color: white;
+    margin-left: 30px;
+    border-radius: 10px;
+}
+#contact a{
+    color: #252434;
+}
+
+.catch_phrase{
+    font-weight:700;
+    font-size: 3.3rem;
+    color: white;
+    letter-spacing: 1.3px;
+    padding: 15px 0px;
+    text-align: center;
+    width: max-content;
+}
+
+.explore_button, #contact {
+    font-size: 1.2rem;
+    padding: 15px;
+    text-align: center;
+    background-size: 200% auto;
+    width: 200px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    cursor: pointer;
+    display: inline-block;
+    border-radius: 10px;
+    background-image: linear-gradient(to right, white 0%, white 51%, white 100%);
+    font-weight: 600;
+    margin-top: 2rem;
+    background-image: linear-gradient(to right, rgba(128, 216, 255, 1) 0%, rgba(234, 128, 252, 1) 50%, rgba(234, 128, 252, 1) 100%);
+
+    color: #252434;
+    transition: all 0.5s;
+}
+.explore_button:hover, #contact:hover{
+    background-image: linear-gradient(to right, white 0%, white 51%, white 100%);
+}
+.explore_button_box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.explore_button{
+    margin-left: -50px;
+    position: relative;
+}
+#contact{
+    margin-top: 5px;
+    width: 70px;
+}
+.content_box{
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+.first_content{
+    flex-basis: 45%;
+    margin-left: 100px;
+}
+#about{
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    margin-top: 4rem;
+}
+.about_content{
+    font-weight:700;
+    font-size: 2em;
+    color: white;
+    letter-spacing: 1.3px;
+    padding: 15px 0px;
+    text-align: center;
+    width: max-content;
+
+}
+
+@media only screen and (max-width: 1510px){
+    .navbar ul{
+        padding-left: 15%;
+    }
+}
+@media only screen and (max-width: 1415px){
+    .first_content{
+        flex-basis: 65%;
+    }
+    .second_content{
+        flex-basis: 15%;
+    }
+}
+
+.services_container{
+    margin-top: -35px;
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    /* background-color: #252434; */
+}
+.services_heading{
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 100px;
+}
+.services_heading::before{
+    content:'What we do';
+    color: white;
+    font-size: 5rem;
+    position: absolute;
+    margin-left: -50px;
+    margin-top: -60px;
+    opacity: 0.15;
+}
+.services_grid{
+    display: grid;
+    margin: auto;
+    width: 65%;
+    min-height: 100vh;
+    height: auto;
+    grid-template-columns: repeat(auto-fill, minmax(19rem, 1fr));
+    grid-gap: 3rem;
+    /* place-items: center; */
+}
+.services_inner{
+    height: 21rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    transition: all 0.5s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.services_content_outer{
+    width: 10rem;
+    text-align: center;
+}
+#services_content_outer3{
+    width: 15rem;
+}
+.services_content{
+    font-size: 1.7rem;
+    font-weight: bold;
+    /* color: rgb(231, 79, 142); */
+    color: white;
+}
+#services_inner9{
+    margin-bottom: 300px;
+}
+.approach_container{
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    /* background-color: #252434; */
+    margin-top: -35px;
+}
+.approach_sub_inner{
+    width: 60%;
+    margin: auto;
+}
+.approach_heading{
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+}
+.approach_heading::before{
+    content:'How do we do it';
+    color: white;
+    font-size: 5rem;
+    position: absolute;
+    margin-left: -90px;
+    margin-top: -60px;
+    opacity: 0.15;
+}
+.approach_image{
+    height: 150px;
+    width: 150px;
+}
+.approach_inner1, .approach_inner2, .approach_inner3, .approach_inner4{
+    margin: 0px 50px;
+    margin-top: 50px;
+    font-weight: 700;
+    color: white;
+    font-size: 2.5rem;
+}
+.approach{
+    display: flex;
+    margin: 10rem 0rem;
+    align-items: center;
+}
+#approach2, #approach4{
+    justify-content: flex-end;
+}
+#approach4{
+    margin-bottom: 0px;
+}
+.approach_inner1::before{
+    content:'01';
+    color: white;
+    font-size: 5rem;
+    position: absolute;
+    margin-top: -80px;
+    opacity: 0.15;
+}
+.approach_inner2::before{
+    content:'02';
+    color: white;
+    font-size: 5rem;
+    position: absolute;
+    margin-top: -80px;
+    opacity: 0.15;
+}
+.approach_inner3::before{
+    content:'03';
+    color: white;
+    font-size: 5rem;
+    position: absolute;
+    margin-top: -80px;
+    opacity: 0.15;
+}
+.approach_inner4::before{
+    content:'04';
+    color: white;
+    font-size: 5rem;
+    position: absolute;
+    margin-top: -80px;
+    opacity: 0.15;
+}
+.dotted{
+    width: 400px;
+    height: 10px;
+    border-top: 7px dotted white;
+}
+#dotted1, #dotted3{
+    margin-top: 200px;
+    margin-left: 100px;
+    transform: rotate(50deg);
+}
+#dotted2{
+    margin-top: 200px;
+    margin-left: 100px;
+    transform: rotate(-50deg);
+}
+.contact_us_container{
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    /* background-color: #252434; */
+    margin-top: -50px;
+}
+.contact_us_heading{
+    color: white;
+    padding-top: 300px;
+    padding-bottom: 4rem;
+    font-size: 3rem;
+    text-align: center;
+}
+.contact_us_heading::before{
+    content:'Get in Touch';
+    color: white;
+    font-size: 5rem;
+    position: absolute;
+    margin-left: -90px;
+    margin-top: -60px;
+    opacity: 0.15;
+}
+.contact_us_first_content, .contact_us_you, .innovation, .contact_us_second_content{
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: auto;
+    text-align: center;
+}
+.contact_us_first_content_outer{
+    text-align: center;
+    margin: auto;
+    margin: 1rem 0rem;
+}
+.contact_us_you{
+    font-size: 1.5rem;
+    background: -webkit-linear-gradient( rgba(128, 216, 255, 1), rgba(234, 128, 252, 1));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.hamburger_icon{
+    height:3px;
+    width: 25px;
+    margin: 5px 5px;
+    background-color: white;
+}
+.res_nav_icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.hamburger_outer, #dark_mode_icons{
+    margin: 0px 15px;
+}
+.burger div, .hamburger_outer div{
+    transition: all 0.3s ease;
+}
+
+.burger #hamburger_icon1{
+    transform: rotate(45deg) translate(5px, 6px)
+}
+.burger #hamburger_icon2{
+    opacity: 0;
+}
+.burger #hamburger_icon3{
+    transform: rotate(-45deg) translate(5px, -6px)
+}
+.res_nav_icons{
+    display: none;
+}
+.first_content{
+    text-align: center;
+}
+.services_image{
+    height: 7rem;
+    width: 7rem
+}
+.contact_input_outer{
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 70%;
+    min-height: 25vh;
+    height: auto;
+    margin: auto;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 3rem;
+}
+
+.first_input_outer{
+    display: flex;
+    box-sizing: border-box;
+    width: 100%;
+    gap: 2rem;
+}
+.second_input_outer{
+    display: flex;
+    flex-direction: column;
+}
+.name_input, .email_input{
+    flex-basis: 48%;
+}
+#message{
+    width: 97%;
+    min-height: 5rem;
+    outline: none;
+    border-radius: 10px;
+    padding: 1rem 1rem;
+    margin: 2rem 0rem;
+    font-family: monospace;
+    resize: none;
+    background-color: #8025FE;
+    color: white;
+    border: none;
+    font-family: 'Nunito', 'sans-serif';
+    
+}
+textarea::placeholder, input::placeholder{
+    color: white;
+}
+input{
+    border-radius: 10px;
+    padding: 1.3rem 1rem;
+    border: none;
+    outline: none;
+    font-family: monospace;
+    font-weight: 500;
+    background-color: #8025FE;
+    color: white;
+    font-family: 'Nunito', 'sans-serif';
+}
+.send_button{
+    padding: 1.2rem 4rem;
+    background-color: #8025FE;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    font-family: monospace;
+    letter-spacing: 1px;
+    font-size: 1rem;
+    font-family: 'Nunito', 'sans-serif';
+    
+}
+footer{
+    background-color: white;
+    border-top-left-radius: 6rem;
+    border-top-right-radius: 6rem;
+    min-height: 350px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow-y: hidden;
+    padding-top: 1rem;
+}
+.footer_top_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icons_container img{
+    height: 30px;
+    width: 30px;
+    padding: 0rem 1rem;
+}
+.footer_links{
+    display: flex;
+}
+.footer_links li{
+    list-style: none;
+    padding: 0rem 1.4rem;
+    color: #8025FE;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+.footer_button{
+    
+    padding: 1rem 2rem;
+    background-color: #8025FE;
+    color: white;
+    border: none;
+    border-radius: 2rem;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    margin-left: 3rem;
+}
+.line{
+    height: 1px;
+    width: 70%;
+    background-color: #8025FE;
+}
+.footer_bottom_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    height: 100px;
+}
+.footer_logo{
+    height: 15rem;
+    width: 15rem;
+}
+.footer_text{
+    font-size: 1.2rem;
+    color: #8025FE;
+    font-weight: bold;
+}
+.services_inner:hover{
+    background-color: white;
+}
+.services_inner:hover .services_content{
+    color: black;
+}
+.footer_images{
+    transition: all 0.4s;
+}
+.footer_images:hover{
+    transform: translateY(-3px);
+}
+.footer_links a{
+    text-decoration: none;
+}
+@media only screen and (max-width: 1263px){
+    .links_outer{
+        position: fixed;
+        right: 0px;
+        width: 50%;
+        top: -2vh;
+        height:80vh;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        transition: all 0.3s;
+        transform: translateX(100%);
+    }
+    .underline::after{
+        margin-left: -100px;
+    }
+    .links_outer li a{
+        margin-left: -100px;
+    }
+    .links_outer li a,  .links_outer li #contact{
+        font-size: 1rem;
+        color: #252434;
+    }
+    .res_nav_icons{
+        display: flex;
+    }
+    .toggle_nav_icons{
+        position: fixed;
+        top: 6vh;
+        right: 7vh;
+    }
+    .navbar{
+        justify-content:space-between; 
+        padding: 0px 10%;   
+    }
+    .navbar ul li{
+        border: none;
+        margin: 1rem 0rem;
+    }
+    .navbar ul li a{
+        font-size: 2rem;
+        font-family: consolas;
+    }
+    #contact{
+        border: none;
+        background-color: transparent;
+        color: white;
+    }
+    #contact a{
+        color: white
+    }
+    
+    .burger div, .hamburger_outer div{
+        transition: all 0.3s ease;
+    }
+    
+    .burger #hamburger_icon1{
+        transform: rotate(45deg) translate(5px, 6px)
+    }
+    .burger #hamburger_icon2{
+        opacity: 0;
+    }
+    .burger #hamburger_icon3{
+        transform: rotate(-45deg) translate(5px, -6px)
+    }
+    body{
+        overflow-x: hidden;
+    }
+    .nav_active{
+        transform: translateX(0%);
+    }
+    #marker{
+        display: block
+    }
+    #contact {
+        margin-left: 0px;
+        font-weight: 500;
+        margin-top: 0rem;
+        color: #252434;   
+        background-image: linear-gradient(to right, white 0%, white 50%, white 100%);
+        box-shadow: none;
+    }
+    #contact:hover{
+        background-image: none
+    }
+    #contact{
+        margin-top: 5px;
+    }
+    #contact a{
+        color: #252434;
+    }
+}
+@media only screen and (max-width: 859px){
+    .first_content{
+        flex-basis: 85%;
+    }
+    .second_content{
+        display: none;
+    }
+    .navbar{
+        padding: 0px 50px;
+    }
+    
+}
+@media only screen and (max-width: 655px){
+    .first_content{
+        flex-basis: 100%;
+        padding-left: 3rem;
+    }
+    
+}
+@media only screen and (max-width: 1113px){
+    .first_content{
+        flex-basis: 76%;
+        text-align: center;
+    }
+    
+}
+@media only screen and (max-width: 952px){
+    .first_content{
+        flex-basis: 85%;
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 2000px){
+    .content_box{
+        height: 50vh;
+    }
+    #about{
+        margin-top: 3rem;
+        margin-bottom: 5rem;
+    }
+}
+@media only screen and (max-width: 1400px){
+    .content_box{
+        height: 50vh;
+        margin-left: -50px;
+    }
+    #about{
+        width: 90%;
+        margin-top: 3rem;
+        margin-bottom: 5rem;
+    }
+}
+@media only screen and (max-width: 1100px){
+    .heading{
+        font-size: 2.8rem;
+    }
+    .heading::before{
+        font-size: 3.4rem;
+        margin-top: -40px;
+        margin-left: 0px;
+    }
+    .approach_heading::before{
+        margin-left: -10px;
+    }
+    .catch_phrase{
+        font-size: 2.6rem;
+    }
+    .about_content{
+        font-size: 1.4em;
+    }
+    .services_content{
+        font-size: 1.5rem;
+    }
+}
+
