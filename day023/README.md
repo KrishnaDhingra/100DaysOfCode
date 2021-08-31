@@ -1,0 +1,3 @@
+Hello everyone,
+This is the twenty third day of the 100DaysOfCode Challenge. 
+I did a lot of things in the last 2-3 days I worked on the athyca-website, practiced node, started with a new project. So have a lot of work to do. I've also participated in a hackathon so will have to do quite a lot of work in it too I suppose. I also have my exams coming ( starting from 4th september ). I'll have to manage my studies and coding together.
