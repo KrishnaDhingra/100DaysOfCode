@@ -1,0 +1,2 @@
+Hello everyone, 
+This is the 29th day of the 100DaysOfCode Challenge. Today I worked on the photosnap multi page website ( as usuall ), I also worked on the athyca-website.  I made the corrections that Navaneetha told me to make. Now tomorrow I thik that I'll complete the whole photosnap-multi-page-website. I'll then study a lot. Coding pe thoda kam dhyaan for a few days as exams are going on.
