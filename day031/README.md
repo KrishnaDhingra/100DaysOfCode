@@ -1,0 +1,2 @@
+Hello everyone, 
+This is the 31st day of the 100daysofcode challenge. Today I just practiced framer motion. I think that it was enough for today. I wasted a lot of time today. Watched a lot of youtube, used a lot of discord. I've installed an app tracker app to track my activities. Lets see if it helps me or not. My goals for tomorrow are to practice framer motion, node js and to start a new project that includes api. Probably the REST countries api project in frontend mentor. :)
