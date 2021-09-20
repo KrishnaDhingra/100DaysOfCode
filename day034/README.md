@@ -1,0 +1,2 @@
+Hello everyone,
+This is the 34th day of the 100dayofcode challenge. Today I worked on the athyca-website and practice a bit of react-query. My goal for tomorrow is to start the country api project from frontend mentor and finish it as soon as possible. :)
