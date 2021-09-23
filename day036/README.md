@@ -1,0 +1,4 @@
+Hello everyone,
+This is the 36th day of the 100dayfofcode challenge. Today I completed the countries-of-the-world project. I didn't practice react query though.
+My goal for tomorrow is to practice a bit of react query, start a new project. I might start with the invoice project. The technologies that I might use for making it are react, tailwind, styled-components, framer-motion and react-router. It'll be tricky to make this project. I'm also confused that what to do first, redux or node js.
+I'll think that I'll start with node js. :) I also have to work on the e-commerce website as I just got how the solution to my problem that I was facing for quite a long time now. :)
