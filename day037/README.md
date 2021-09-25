@@ -1,0 +1,2 @@
+Hello everyone,
+This is the 37th day of the 100daysofcode challenge. In these 3 days. Oh wait wait. So, actually it has been around 2 months since I started this challenge. And this folder says it's day37th. So I've coded almost everyday but I wasn't able to update ya'll everyday. I either forgot to or wasn't able to. So in these 3 days. I praticed react query. Started a new project. and made the 404 page for bluelearn. Now I have to complete making the invoice app and work a bit on the bluelearn login page. :)
