@@ -1,0 +1,2 @@
+Hello everyone,
+This is the 44th day of the 100daysofcode challenge. Today I worked quite a lot on the portfolio website considering that tomorrow's my exam :). So..... right now my goal is to just complete the portoflio website and all the other pending projects asap :).
